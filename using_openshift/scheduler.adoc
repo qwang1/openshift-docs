@@ -98,11 +98,11 @@ Only use nodes with the 'region' label defined and prefer nodes with the 'zone' 
 ----
 {
 	"predicates" : [
-		{"name" : "RequireRegion", "argument" : {"labelsPresence" : {"labels" : ["region"], "presence" : true}}},
+		{"name" : "RequireRegion", "argument" : {"labelsPresence" : {"labels" : ["region"], "presence" : true}}}
 
 	],
 	"priorities" : [
-		{"name" : "ZonePreferred", "weight" : 1, "argument" : {"labelPreference" : {"label" : "zone", "presence" : true}}},
+		{"name" : "ZonePreferred", "weight" : 1, "argument" : {"labelPreference" : {"label" : "zone", "presence" : true}}}
 	]
 }
 ----
