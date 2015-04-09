@@ -39,7 +39,7 @@ A custom set of predicates can be specified to configure the scheduler.  There a
 ==== Fixed Predicates
 
 1. 'PodFitsPorts' deems a node to be fit for hosting a pod based on the absence of port conflicts
-1. 'PodFitsResources' determines a fit baased resource availability.  The nodes can declare their resource capacities and then pods can specify what resources they require.  Fit is based on requested, rather than used resources.
+1. 'PodFitsResources' determines a fit based resource availability.  The nodes can declare their resource capacities and then pods can specify what resources they require.  Fit is based on requested, rather than used resources.
 1. 'NoDiskConflict' determines fit based on non-conflicting disk volumes.  It evaluates if a pod can fit due to the volumes it requests, and those that are already mounted.
 1. 'MatchNodeSelector' determines fit based on node selector query that is defined in the pod.
 1. 'HostName' determines fit based on the presence of the Host parameter and a string match with the name of the host
